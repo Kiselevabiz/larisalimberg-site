@@ -1,0 +1,14 @@
+/* Water light shares the existing cobalt and turquoise palette. */
+#requests .change-photo{filter:none}
+#requests .change-scene:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,#236bcc0d,transparent 50%,#159dae12);mix-blend-mode:soft-light;z-index:0}
+#requests .request-list{z-index:1}
+#approach,#contact{position:relative;isolation:isolate}
+.water-reflection{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:-1;opacity:.6;contain:paint}
+.water-reflection i{position:absolute;display:block;width:540px;height:200px;left:-270px;top:45%;border-radius:50%;border:15px solid #6cd9e522;transform:rotate(-27deg) skewX(-18deg);filter:blur(14px);box-shadow:0 0 38px #2eaec31a,inset 0 0 34px #60d1de12}
+.water-reflection i:nth-child(2){width:430px;height:145px;left:-160px;top:63%;border-width:10px;border-color:#91e1e31c;transform:rotate(-21deg) skewX(-25deg);filter:blur(11px)}
+.water-reflection i:nth-child(3){width:650px;height:240px;left:-350px;top:20%;border-width:22px;border-color:#339bd629;transform:rotate(-34deg);filter:blur(24px)}
+#contact .water-reflection{opacity:.8;transform:scaleX(-1)}
+#contact .water-reflection i{top:42%;left:-260px;width:620px;height:220px}
+#contact .water-reflection i:nth-child(2){top:65%;left:-150px;width:440px;height:150px}
+#contact .water-reflection i:nth-child(3){top:10%;left:-350px}
+@media(max-width:700px){.water-reflection{opacity:.42}.water-reflection i{left:-370px}.water-reflection i:nth-child(2){left:-290px}.water-reflection i:nth-child(3){left:-450px}#contact .water-reflection{opacity:.5}#contact .water-reflection i{left:-440px}#contact .water-reflection i:nth-child(2){left:-310px}#contact .water-reflection i:nth-child(3){left:-500px}}

@@ -1,0 +1,28 @@
+/* Cobalt light continues below the Hero; text areas remain calm. */
+body{background-color:#09265f}
+#requests{background:radial-gradient(ellipse at 0% 18%,#1267d52b,transparent 52%)}
+#about{background:radial-gradient(ellipse at 100% 42%,#1267d526,transparent 50%)}
+#approach{background:linear-gradient(180deg,#09265f,transparent 24%,transparent 76%,#09265f),radial-gradient(ellipse at 0% 52%,#1267d54d,transparent 52%),radial-gradient(ellipse at 100% 70%,#165ac12b,transparent 45%),#0b2a65}
+#sessions.botanical{background:linear-gradient(180deg,#09265f,transparent 24%,transparent 76%,#09265f),radial-gradient(ellipse at 100% 40%,#1267d547,transparent 52%),radial-gradient(ellipse at 0% 80%,#1978bc29,transparent 45%),#0b2a65}
+#questions{background:radial-gradient(ellipse at 0% 50%,#1267d529,transparent 52%)}
+#contact{background:linear-gradient(180deg,#09265f,transparent 25%,transparent 75%,#09265f),radial-gradient(ellipse at 50% 30%,#bf41f822,transparent 58%),radial-gradient(ellipse at 0% 65%,#1267d54d,transparent 48%),radial-gradient(ellipse at 100% 55%,#1267d53d,transparent 45%),#0b2a65}
+.site-footer{background:linear-gradient(180deg,#09265f,transparent 65%),radial-gradient(ellipse at 88% 100%,#bf41f833,transparent 55%),radial-gradient(ellipse at 12% 100%,#1267d53d,transparent 55%),#122859}
+
+/* Quiet edge light connects the request cards to the violet-pink accents. */
+#requests .request-list article{border-color:rgba(240,166,250,.85);box-shadow:0 0 12px rgba(216,110,244,.46),0 0 32px rgba(167,67,235,.32),inset 0 0 14px rgba(223,144,245,.12)}
+
+.video-reviews{display:flex;flex-wrap:wrap;justify-content:center;gap:36px;margin:36px auto;max-width:700px}
+.video-review{border:0;background:none;color:#fff;padding:0;cursor:pointer;text-align:center}
+.video-review-ring{position:relative;display:block;width:180px;aspect-ratio:1;padding:5px;border-radius:50%;background:linear-gradient(125deg,#7933fa,#bf41f8,#f17bfa);box-shadow:0 0 24px #bf41f83d}
+.video-review-ring video{width:100%;height:100%;object-fit:cover;border-radius:50%;clip-path:circle(49%);display:block}
+.video-review-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:48px;height:48px;padding-left:3px;border-radius:50%;color:white;background:#23113dc9;border:1px solid #ffffff80;font-size:19px}
+.video-review:hover .video-review-play{background:#682db1}
+.video-review-caption{display:block;margin-top:12px;font-size:14px;color:#f4e5f8}
+.review-video-dialog{border:1px solid #ce91e766;border-radius:24px;background:#10234d;color:white;padding:52px 20px 20px;max-width:min(90vw,500px);max-height:90dvh;margin:auto;box-shadow:0 25px 100px #0008}
+.review-video-dialog::backdrop{background:#030b20c9;backdrop-filter:blur(9px)}
+.review-video-dialog video{display:block;width:100%;max-height:65dvh;border-radius:12px;background:#071426}
+.review-video-close{position:absolute;right:12px;top:8px;width:40px;height:40px;border:0;border-radius:50%;color:#fff;background:#ffffff12;font-size:30px;cursor:pointer}
+.review-video-error{font-size:15px;color:white}.review-video-error a{text-decoration:underline}
+@media(max-width:500px){.video-reviews{gap:22px}.video-review-ring{width:132px}.video-review-caption{font-size:12px}}
+
+.video-review.is-playing .video-review-play{top:auto;bottom:9px;transform:translateX(-50%);width:32px;height:32px;font-size:14px;padding-left:0;background:#23113db3}

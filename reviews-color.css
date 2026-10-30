@@ -1,0 +1,61 @@
+/* Saturated violet-to-pink from the reference CTA, scoped to reviews. */
+#reviews {
+  width:100%; max-width:none; margin-inline:0;
+  padding-inline:max(20px,calc((100vw - 1240px)/2));
+  background:linear-gradient(180deg,#09265f 0%,transparent 22%,transparent 78%,#09265f 100%),radial-gradient(ellipse at 56% 48%,#bf41f8 0%,#8433cb 34%,#43257e 63%,#122451 90%);
+  color:#fff;
+}
+#reviews .testimonials-heading{max-width:1100px;margin-inline:auto;padding-inline:54px}
+#reviews h2{color:#fff}
+#reviews .handwritten-review{
+  background:linear-gradient(145deg,rgba(51,12,105,.70),rgba(77,13,100,.68));
+  border:1px solid rgba(255,255,255,.28);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 12px 35px -22px #370e69;
+}
+#reviews .handwritten-review h3,#reviews .handwritten-review blockquote p{color:#fff}
+#reviews .review-fragment{color:#f2dff9}
+#reviews .reviews-closing{max-width:720px;margin:36px auto 0;padding:26px 24px;background:rgba(40,10,69,.82);border:1px solid #ffffff30;border-radius:22px;text-align:center}
+#reviews .reviews-invitation{color:#fff;text-align:center;margin:0 auto;width:100%;font-size:17px;line-height:1.6}
+#reviews .review-note{color:#eee2f5;text-align:center;margin:20px 0 0;font-size:14px;line-height:1.6}
+#reviews .feedback-navigation button{background:#44136d;color:#fff;border-color:#ffffff66}
+#reviews .feedback-navigation button:hover:not(:disabled){background:#60218e}
+#reviews .feedback-navigation button:disabled{opacity:.45}
+#reviews .reviews-more .button{background:linear-gradient(110deg,#c690f5,#eea1e9);color:#29103f;border:1px solid #edb8f080;box-shadow:0 5px 20px #bf41f826}
+#reviews .reviews-more .button:hover{filter:brightness(1.08)}
+#reviews a:focus-visible,#reviews button:focus-visible{outline:3px solid #fff;outline-offset:4px}
+@media(max-width:700px){#reviews .testimonials-heading{padding-inline:35px}}
+
+/* Small echoes of the reviews palette; the Hero remains untouched. */
+#approach .cosmos-sky{background:radial-gradient(ellipse at 50% 48%,#af48e836,transparent 66%)}
+#approach .cosmos-sky:before{box-shadow:inset -16px -20px 35px #000d2b99,inset 3px 4px 14px #edb4f06b,0 0 32px #aa45ee30,0 24px 35px -10px #00112e99;border-color:#d79aee66}
+#approach .cosmos-sky i:nth-child(2){border-color:#e090eeaa;box-shadow:0 0 16px #c64bed44,inset 0 0 12px #d372ee22}
+#approach .cosmos-controls button[aria-pressed=true]{background:linear-gradient(115deg,#682db1,#993491);border-color:#efa5ed;box-shadow:0 0 22px #bf41f83d;color:#fff}
+#approach .cosmos-controls button[aria-pressed=true]:before{background:#f9c1f7;box-shadow:0 0 8px #f17bfa}
+#sessions .session:nth-child(2){border-color:#da84ec99;box-shadow:0 0 28px -10px #bf41f875,inset 0 1px 0 #f4b7ef33}
+#sessions .session:nth-child(2) .button,#contact .button{background:linear-gradient(110deg,#7933fa,#bf41f8 55%,#f17bfa);color:#170c30;border-color:#e6a0f47a;box-shadow:0 5px 24px -10px #bf41f885}
+#contact{background:radial-gradient(ellipse at 50% 30%,#bf41f82b,transparent 58%),radial-gradient(ellipse at 0 90%,#08778f99,transparent 42%),radial-gradient(ellipse at 95% 10%,#096e8580,transparent 38%),#092c73}
+
+/* Hero CTA intensity matches the new accents without changing its layout. */
+#top .hero-side .button{background:linear-gradient(110deg,#7933fa 0%,#bf41f8 55%,#f17bfa 100%);color:#170c30;border-color:#efa7f580;box-shadow:0 0 22px #bf41f850,inset 0 1px 0 #ffffff38}
+#top .hero-side .button:hover{filter:brightness(1.08);box-shadow:0 0 29px #bf41f870,inset 0 1px 0 #ffffff45}
+
+#about .telegram-drop{background:linear-gradient(110deg,#7933fa 0%,#bf41f8 55%,#f17bfa 100%);color:#170c30;border-color:#efa7f580;box-shadow:0 0 22px #bf41f850,inset 0 1px 0 #ffffff38}
+#about .telegram-drop-copy strong,#about .telegram-drop-arrow,#about .telegram-drop-icon{color:#170c30}
+#about .telegram-drop-icon{background:#ffffff24;border-color:#ffffff50}
+#about .telegram-drop:hover{filter:brightness(1.08);box-shadow:0 0 29px #bf41f870,inset 0 1px 0 #ffffff45}
+
+/* Footer closes the blue, violet and pink palette. */
+.site-footer{background:radial-gradient(ellipse at 88% 75%,#bf41f83d,transparent 55%),radial-gradient(ellipse at 12% 100%,#7933fa45,transparent 55%),linear-gradient(135deg,#092c73,#152457 62%,#35245c);border-top-color:#da84ec35;color:#faf4ff}
+.site-footer .brand{color:#faf4ff}
+.site-footer p,.site-footer nav,.site-footer .underlink{color:#e0d6ef}
+.site-footer .footer-contact{background:linear-gradient(115deg,#7933fa30,#bf41f82b 55%,#f17bfa22);border-color:#e9a4ed55;box-shadow:inset 0 1px 0 #ffffff18}
+.site-footer .footer-contact:hover{background:linear-gradient(115deg,#7933fa50,#bf41f845 55%,#f17bfa38);border-color:#f1b5f0aa}
+.site-footer .footer-contact-icon{color:#f4b6f5}
+.site-footer .footer-contact small{color:#e5c9ef}
+.site-footer .footer-contact strong{color:#fff}
+.site-footer nav a:hover,.site-footer .underlink:hover{color:#f4b6f5}
+
+.header .brand,.site-footer .brand{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-style:normal;letter-spacing:-.035em;line-height:1.15}
+.header .brand{font-size:30px}
+.site-footer .brand{font-size:clamp(30px,3vw,40px);white-space:normal}
+.site-footer .brand em{font-style:normal}

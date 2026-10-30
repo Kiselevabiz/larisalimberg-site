@@ -1,0 +1,41 @@
+/* Preserve the established portrait, palette and glass; unify the lower-page rhythm. */
+main>section:not(.hero){--section-space:88px}
+main>section.wrap:not(.hero),#approach>.wrap,#contact>.wrap{width:90%;max-width:1240px;margin-inline:auto}
+#sessions>.wrap{width:90%;max-width:1240px}
+#about,#approach,#reviews{padding-block:var(--section-space)}
+main>section:not(.hero) h2{text-wrap:balance}
+#about{grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:8%;align-items:center}
+#about .about-image{max-width:470px;width:100%;margin:0}
+#about .about-image img{border-radius:20px 80px 20px 20px}
+#about .about-image p{font-size:25px;line-height:1.35;margin-top:20px}
+#about .about-copy>p{max-width:58ch}
+#about .about-copy .large-copy{font-size:24px;line-height:1.4;margin-top:22px}
+#about .about-copy>p+p{margin-top:20px}
+#approach .approach-heading{padding-left:42%}
+#approach .approach-layout{grid-template-columns:minmax(0,34fr) minmax(0,58fr);gap:8%;align-items:start;margin-top:40px;margin-bottom:20px}
+#approach .cosmos{margin-top:0;align-self:start}
+#approach .approach-copy .large-copy{font-size:24px;line-height:1.5}
+#approach .principles{gap:28px;margin-top:30px}
+#approach .principles h3{font-size:29px;line-height:1.15;margin-bottom:12px}
+#approach .principles p{font-size:17px;line-height:1.65}
+#requests .request-list article{border-color:#c2e6e32b;border-radius:20px;box-shadow:none}
+#requests .request-list h3{line-height:1.12}
+#requests .change-note span{font-size:16px}
+#sessions .session-grid{gap:24px}
+#sessions .session,#sessions .session:first-child,#sessions .session:last-child{border-radius:20px}
+#sessions .session:nth-child(2){box-shadow:0 8px 30px -14px #70dcd86b}
+#sessions .session .price-row{font-variant-numeric:tabular-nums;padding-top:22px}
+#sessions .retreat{margin-top:44px}
+#questions{padding-block:80px;border-top:0;gap:8%}
+#questions summary{padding-block:22px;border-color:#c2e6e326}
+#questions details>p{max-width:62ch;padding-bottom:24px;color:#dce7ef}
+#reviews .handwritten-review{border-color:#c2e6e32b}
+.site-footer{padding-block:52px 40px;border-top-color:#c2e6e31c}
+.site-footer .footer-grid{width:90%;max-width:1240px;grid-template-columns:1.2fr .8fr 1fr;gap:36px}
+.site-footer nav a{padding-block:4px}
+@media(max-width:900px){#approach .principles{grid-template-columns:1fr}#approach .approach-copy .large-copy{font-size:22px}.site-footer .footer-grid{gap:24px;grid-template-columns:1fr 1fr}.site-footer .footer-links{grid-column:2;grid-row:1 / span 2}}
+@media(max-width:700px){main>section:not(.hero){--section-space:60px}#about{grid-template-columns:1fr;gap:32px}#about .about-image{max-width:400px;margin-inline:auto}#about .about-copy .large-copy{font-size:22px}#approach .approach-heading{padding-left:0}#approach .approach-layout{display:flex;gap:55px;margin-top:28px}#approach .cosmos{width:100%;max-width:380px;align-self:center}#approach .approach-copy{width:100%}#approach .principles p{font-size:17px}#questions{padding-block:60px;gap:28px}.site-footer .footer-grid{grid-template-columns:1fr;gap:30px}.site-footer .footer-links{grid-column:auto;grid-row:auto}.site-footer nav{flex-direction:row;flex-wrap:wrap;gap:12px 24px}.site-footer .brand{font-size:42px}.site-footer p{margin-top:16px}}
+
+/* Balanced pairs around the seaside photograph. */
+@media(min-width:701px){#requests .request-list{display:grid;grid-template-columns:31% 31%;justify-content:space-between;align-content:space-between;gap:32px;padding:48px 4%}#requests .request-list article{position:relative;inset:auto;width:100%;height:100%;margin:0}}
+@media(max-width:700px){#requests .request-list article:nth-child(n){width:100%;margin-left:0}}
